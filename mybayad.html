@@ -177,49 +177,19 @@ input, textarea{
 		<th>Case State</th>
 	  </tr>
 	  <tr>
-		<td>Chad Ocampo</td>
+		<td>Chad</td>
 		<td>585.00</td>
 		<td><button id="myBtn">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
-		<td>Raine Hilario</td>
-		<td>440.00</td>
-		<td><button id="myBtn2" disabled>Approved</button></td>
-	  </tr>
-	  <tr>
-		<td>Kuya Meynard</td>
-		<td>60.00</td>
-		<td><button id="myBtn3" disabled>Approved</button></td>
-	  </tr>
-	  <tr>
-		<td>Mek Vergara</td>
-		<td>160.00</td>
-		<td><button id="myBtn4" disabled>Approved</button></td>
-	  </tr>
-	  <tr>
-		<td>Rowell Pamatmat</td>
-		<td>60.00</td>
-		<td><button id="myBtn5" disabled>Approved</button></td>
-	  </tr>
-	  <tr>
-		<td>Jan Lerry</td>
+		<td>Jan L</td>
 		<td>130.00</td>
-		<td><button id="myBtn6">Mark as Solved</button></td>
+		<td><button id="myBtn2">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
-		<td>Jabi Ablaza</td>
-		<td>120.00</td>
-		<td><button id="myBtn7" disabled>Approved</button></td>
-	  </tr>
-	  <tr>
-		<td>Elmo Comia</td>
-		<td>130.00</td>
-		<td><button id="myBtn8" disabled>Approved</button></td>
-	  </tr>
-	  <tr>
-		<td>Ate Regina</td>
+		<td>Ate Reg</td>
 		<td>455.00</td>
-		<td><button id="myBtn9">Mark as Solved</button></td>
+		<td><button id="myBtn3">Mark as Solved</button></td>
 	  </tr>
 	</table>
 	<hr>
@@ -231,24 +201,49 @@ input, textarea{
 		<th>Case State</th>
 	  </tr>
 	  <tr>
-		<td>Raine Hilario</td>
+		<td>Raine</td>
 		<td>120.00</td>
-		<td><button id="myBtn10" disabled>Approved</button></td>
+		<td><button id="myBtn4" disabled>Approved</button></td>
 	  </tr>
 	  <tr>
-		<td>Bea Begares</td>
+		<td>Bea</td>
 		<td>120.00</td>
+		<td><button id="myBtn5">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Rowell</td>
+		<td>310.00</td>
+		<td><button id="myBtn6">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Patrick</td>
+		<td>130.00</td>
+		<td><button id="myBtn7">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Jabi</td>
+		<td>60.00</td>
+		<td><button id="myBtn8">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Glenn</td>
+		<td>130.00</td>
+		<td><button id="myBtn9">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Kade</td>
+		<td>130.00</td>
+		<td><button id="myBtn10">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Cams</td>
+		<td>15.00</td>
 		<td><button id="myBtn11">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
-		<td>Rowell Pamatmat</td>
+		<td>Rovie</td>
 		<td>110.00</td>
-		<td><button id="myBtn12">Mark as Solved</button></td>
-	  </tr>
-	  <tr>
-		<td>Patrick Jungco</td>
-		<td>130.00</td>
-		<td><button id="myBtn13">Mark as Solved</button></td>
+		<td><button id="myBtn11" disabled>Approved</button></td>
 	  </tr>
 	</table>
 </div>
@@ -300,11 +295,25 @@ input, textarea{
 	  }
 	}
 	
+	var btn2 = document.getElementById("myBtn2");
+	btn2.onclick = function() {
+	  modal.style.display = "block";
+	  document.getElementById("myBtn2").innerHTML = "Pending";
+	  document.getElementById("myBtn2").disabled = true;
+	}
+	
 	var btn3 = document.getElementById("myBtn3");
 	btn3.onclick = function() {
 	  modal.style.display = "block";
 	  document.getElementById("myBtn3").innerHTML = "Pending";
 	  document.getElementById("myBtn3").disabled = true;
+	}
+	
+	var btn4 = document.getElementById("myBtn4");
+	btn4.onclick = function() {
+	  modal.style.display = "block";
+	  document.getElementById("myBtn4").innerHTML = "Pending";
+	  document.getElementById("myBtn4").disabled = true;
 	}
 	
 	var btn5 = document.getElementById("myBtn5");
