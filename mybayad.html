@@ -29,7 +29,7 @@ tr:nth-child(even) {
 
 #myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5,
 #myBtn6, #myBtn7, #myBtn8, #myBtn9, #myBtn10,
-#myBtn11, #myBtn12, #myBtn13{
+#myBtn11, #myBtn12, #myBtn13, #myBtn14, #myBtn15{
 	padding: 10px 15px;
     font-size: 18px;
     background: dodgerblue;
@@ -179,7 +179,7 @@ input, textarea{
 	  <tr>
 		<td>Chad</td>
 		<td>585.00</td>
-		<td><button id="myBtn">Mark as Solved</button></td>
+		<td><button id="myBtn" disabled>Approved</button></td>
 	  </tr>
 	  <tr>
 		<td>Jan L</td>
@@ -189,7 +189,7 @@ input, textarea{
 	  <tr>
 		<td>Ate Reg</td>
 		<td>455.00</td>
-		<td><button id="myBtn3">Mark as Solved</button></td>
+		<td><button id="myBtn3" disabled>Approved</button></td>
 	  </tr>
 	</table>
 	<hr>
@@ -202,7 +202,7 @@ input, textarea{
 	  </tr>
 	  <tr>
 		<td>Raine</td>
-		<td>120.00</td>
+		<td>130.00</td>
 		<td><button id="myBtn4" disabled>Approved</button></td>
 	  </tr>
 	  <tr>
@@ -222,8 +222,8 @@ input, textarea{
 	  </tr>
 	  <tr>
 		<td>Jabi</td>
-		<td>60.00</td>
-		<td><button id="myBtn8">Mark as Solved</button></td>
+		<td>120.00</td>
+		<td><button id="myBtn8" disabled>Approved</button></td>
 	  </tr>
 	  <tr>
 		<td>Glenn</td>
@@ -243,7 +243,17 @@ input, textarea{
 	  <tr>
 		<td>Rovie</td>
 		<td>110.00</td>
-		<td><button id="myBtn11" disabled>Approved</button></td>
+		<td><button id="myBtn12" disabled>Approved</button></td>
+	  </tr>
+	  <tr>
+		<td>Celeste</td>
+		<td>60.00</td>
+		<td><button id="myBtn13">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Chad</td>
+		<td>260.00</td>
+		<td><button id="myBtn14">Mark as Solved</button></td>
 	  </tr>
 	</table>
 </div>
@@ -374,6 +384,12 @@ input, textarea{
 	  modal.style.display = "block";
 	  document.getElementById("myBtn13").innerHTML = "Pending";
 	  document.getElementById("myBtn13").disabled = true;
+	}
+	var btn14 = document.getElementById("myBtn14");
+	btn14.onclick = function() {
+	  modal.style.display = "block";
+	  document.getElementById("myBtn14").innerHTML = "Pending";
+	  document.getElementById("myBtn14").disabled = true;
 	}
 	
 /*Form Reset*/
