@@ -29,7 +29,8 @@ tr:nth-child(even) {
 
 #myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5,
 #myBtn6, #myBtn7, #myBtn8, #myBtn9, #myBtn10,
-#myBtn11, #myBtn12, #myBtn13, #myBtn14, #myBtn15{
+#myBtn11, #myBtn12, #myBtn13, #myBtn14, #myBtn15,
+#myBtn16{
 	padding: 10px 15px;
     font-size: 18px;
     background: dodgerblue;
@@ -150,6 +151,31 @@ input, textarea{
   color: white;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 @media only screen and (max-width: 600px) {
 	h1{
 		text-align: center;
@@ -174,22 +200,18 @@ input, textarea{
 	  <tr>
 		<th>Name</th>
 		<th>Balance</th>
+		<th>Balance Lookup</th>
 		<th>Case State</th>
-	  </tr>
-	  <tr>
-		<td>Chad</td>
-		<td>585.00</td>
-		<td><button id="myBtn" disabled>Approved</button></td>
 	  </tr>
 	  <tr>
 		<td>Jan L</td>
 		<td>130.00</td>
-		<td><button id="myBtn2">Mark as Solved</button></td>
-	  </tr>
-	  <tr>
-		<td>Ate Reg</td>
-		<td>455.00</td>
-		<td><button id="myBtn3" disabled>Approved</button></td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">Back fat - 130</span>
+			</div>
+		</td>
+		<td><button id="myBtn">Mark as Solved</button></td>
 	  </tr>
 	</table>
 	<hr>
@@ -198,62 +220,138 @@ input, textarea{
 	  <tr>
 		<th>Name</th>
 		<th>Balance</th>
+		<th>Balance Lookup</th>
 		<th>Case State</th>
 	  </tr>
 	  <tr>
 		<td>Raine</td>
 		<td>130.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">Mushroom - 130</span>
+			</div>
+		</td>
 		<td><button id="myBtn4" disabled>Approved</button></td>
 	  </tr>
 	  <tr>
 		<td>Bea</td>
 		<td>120.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">2 Belly - 120</span>
+			</div>
+		</td>
 		<td><button id="myBtn5">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
 		<td>Rowell</td>
-		<td>310.00</td>
+		<td>525.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">1 litid 110<br> 2 pusit - 200<br> Back fat - 215</span>
+			</div>
+		</td>
 		<td><button id="myBtn6">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
 		<td>Patrick</td>
 		<td>130.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">1 Tabaron 130</span>
+			</div>
+		</td>
 		<td><button id="myBtn7">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
 		<td>Jabi</td>
-		<td>120.00</td>
-		<td><button id="myBtn8" disabled>Approved</button></td>
+		<td>60.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">1 Belly 60</span>
+			</div>
+		</td>
+		<td><button id="myBtn8">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
 		<td>Glenn</td>
 		<td>130.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">1 Bagnet 130</span>
+			</div>
+		</td>
 		<td><button id="myBtn9">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
 		<td>Kade</td>
 		<td>130.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">Butter Cookies - 130</span>
+			</div>
+		</td>
 		<td><button id="myBtn10">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
 		<td>Cams</td>
 		<td>15.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">Balance 15</span>
+			</div>
+		</td>
 		<td><button id="myBtn11">Mark as Solved</button></td>
 	  </tr>
 	  <tr>
 		<td>Rovie</td>
 		<td>110.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">Butter Toast - paid</span>
+			</div>
+		</td>
 		<td><button id="myBtn12" disabled>Approved</button></td>
 	  </tr>
 	  <tr>
 		<td>Celeste</td>
 		<td>60.00</td>
-		<td><button id="myBtn13">Mark as Solved</button></td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">Belly - paid</span>
+			</div>
+		</td>
+		<td><button id="myBtn13" disabled>Approved</button></td>
 	  </tr>
 	  <tr>
 		<td>Chad</td>
-		<td>260.00</td>
+		<td>280.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">1 Mushroom 130<br>1 Butcheron - 130<br>1 Sweet - 20</span>
+			</div>
+		</td>
 		<td><button id="myBtn14">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Leo</td>
+		<td>60.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">1 Belly - 60</span>
+			</div>
+		</td>
+		<td><button id="myBtn15">Mark as Solved</button></td>
+	  </tr>
+	  <tr>
+		<td>Seb</td>
+		<td>100.00</td>
+		<td>
+			<div class="tooltip">Look up
+			  <span class="tooltiptext">1 Pusit - Paid</span>
+			</div>
+		</td>
+		<td><button id="myBtn16" disabled>Approved</button></td>
 	  </tr>
 	</table>
 </div>
@@ -303,20 +401,6 @@ input, textarea{
 	  if (event.target == modal) {
 		modal.style.display = "none";
 	  }
-	}
-	
-	var btn2 = document.getElementById("myBtn2");
-	btn2.onclick = function() {
-	  modal.style.display = "block";
-	  document.getElementById("myBtn2").innerHTML = "Pending";
-	  document.getElementById("myBtn2").disabled = true;
-	}
-	
-	var btn3 = document.getElementById("myBtn3");
-	btn3.onclick = function() {
-	  modal.style.display = "block";
-	  document.getElementById("myBtn3").innerHTML = "Pending";
-	  document.getElementById("myBtn3").disabled = true;
 	}
 	
 	var btn4 = document.getElementById("myBtn4");
@@ -391,7 +475,19 @@ input, textarea{
 	  document.getElementById("myBtn14").innerHTML = "Pending";
 	  document.getElementById("myBtn14").disabled = true;
 	}
+	var btn15 = document.getElementById("myBtn15");
+	btn15.onclick = function() {
+	  modal.style.display = "block";
+	  document.getElementById("myBtn15").innerHTML = "Pending";
+	  document.getElementById("myBtn15").disabled = true;
+	}
 	
+	var btn16 = document.getElementById("myBtn16");
+	btn16.onclick = function() {
+	  modal.style.display = "block";
+	  document.getElementById("myBtn16").innerHTML = "Pending";
+	  document.getElementById("myBtn16").disabled = true;
+	}
 /*Form Reset*/
 	const scriptURL="https://script.google.com/macros/s/AKfycbyVbYt0M1bPRNJJsOuSED30yAM95U934SbUvbT6EpyLtGmgqBlPvfP-Fw56NuF5wLzY/exec"
 	const form = document.forms['contact-form']
